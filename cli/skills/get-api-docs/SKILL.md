@@ -79,7 +79,6 @@ Available labels: `outdated`, `inaccurate`, `incomplete`, `wrong-examples`,
 
 ## Notes
 
-- `chub get` auto-detects whether an ID is a doc or skill — no subcommand needed
 - `chub search` with no query lists everything available
 - IDs are `<author>/<name>` — confirm the ID from search before fetching
 - If multiple languages exist and you don't pass `--lang`, chub will tell you which are available
