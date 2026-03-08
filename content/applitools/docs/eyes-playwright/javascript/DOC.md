@@ -43,7 +43,7 @@ The Applitools Playwright fixture provides two core advantages over Playwright's
 ## Batch Management & Notifications
 Set `batch.id` explicitly to group all parallel/sharded jobs into a single batch:
 - **Standard:** Use the commit SHA — all jobs on the same commit share one batch.
-- **With re-runs:** Use a unique build ID (e.g., CI run ID) so each re-run creates a fresh batch rather than mixing results with the original run.
+- **With re-runs:** Use a unique `batch.buildId` (e.g., CI run ID) so each re-run creates a fresh batch rather than mixing results with the original run.
 
 To trigger Slack/Email notifications and update the SCM status from "Pending" to a final state, the batch must be explicitly closed. Run this as a **separate CI job that runs after all test jobs complete**:
 
